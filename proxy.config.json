@@ -1,0 +1,23 @@
+{
+  "/productserviceurl/*": {
+    "target": "http://localhost:8082",
+    "secure": false,
+    "pathRewrite": { "^/productserviceurl": "" },
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/userserviceurl/*": {
+    "target": "http://localhost:8083",
+    "secure": false,
+    "pathRewrite": { "^/userserviceurl": "" },
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/feedbackserviceurl/*": {
+    "target": "http://localhost:8084",
+    "secure": false,
+    "pathRewrite": { "^/feedbackserviceurl": "" },
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
